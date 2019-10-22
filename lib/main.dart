@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Home());
+void main() =>
+    runApp(MaterialApp(debugShowCheckedModeBanner: false, home: Home()));
 
 class Home extends StatefulWidget {
   @override
@@ -10,6 +11,18 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('BMI Calculator'),
+        centerTitle: true,
+        backgroundColor: Colors.green,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.refresh),
+            onPressed: () {},
+          )
+        ],
+      ),
+    );
   }
 }
