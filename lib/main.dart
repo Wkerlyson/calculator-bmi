@@ -23,6 +23,26 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Icon(Icons.person_outline, size: 120, color: Colors.green),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: 'Weight (Kg)',
+                labelStyle: TextStyle(color: Colors.green)),
+            style: TextStyle(color: Colors.green, fontSize: 25),
+          ),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: 'Height (cm)',
+                labelStyle: TextStyle(color: Colors.green)),
+            style: TextStyle(color: Colors.green, fontSize: 25),
+          )
+        ],
+      ),
     );
   }
 }
